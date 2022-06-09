@@ -31,7 +31,7 @@ namespace kolokwium2
         {
 
             services.AddControllers();
-            services.AddDbContext<KolokwiumContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("Data Source=db-mssql;Initial Catalog=2019sbd;Integrated Security=True")));
+            services.AddDbContext<KolokwiumContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("Data Source=db-mssql;Initial Catalog=2019SBD;Integrated Security=True")));
             services.AddScoped<IKolService, KolService>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
